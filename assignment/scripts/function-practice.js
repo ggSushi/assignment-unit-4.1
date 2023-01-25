@@ -6,23 +6,51 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  return 'Hello World!';
+  return `Hello World!`;
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
 
-// 2. Function to return an personalized hello, using the `name` argument.
+// 2. Function to return and personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+
+//! noteGlonel - testing my understanding of the code
+let poppins = 'supercalifrigilisticexpialidocious'
+function spoonfulOfSugar(mary) {
+  mary = poppins;
+  console.log(`I'm`,poppins);
+  return mary;
+}
+spoonfulOfSugar(); 
+//The above line (25) should just display the log, not the return
+
+console.log(`I feel ${spoonfulOfSugar()}`);
+// The above line (28) should display the log within the function 
+// AND return the value of mary within the string.
+ 
+//? From my understanding, a function can run many/any lines
+//? of code, but the return is only displayed when the function is
+//? referred as a variable. It won't actually display or show the
+//? return when it is simply called.
+//!
+
+let firstName = 'Glonel';
+let lastName = 'Dimapilis';
+let fullName = `${firstName} ${lastName}`;
+
 function helloName( name ) {
-  return;
+  name = fullName;
+  return name;
 }
 // Remember to call the function to test
-
+console.log('Hello,', helloName());
 
 // 3. Function to add two numbers together & return the result
+
 function addNumbers( firstNumber ) {
   // return firstNumber + secondNumber;
+
 }
 
 
