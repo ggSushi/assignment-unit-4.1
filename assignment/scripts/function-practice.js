@@ -40,11 +40,26 @@ console.log(`I feel ${spoonfulOfSugar()}`);
 // The above line (28) should display the log within the function 
 // AND return the value of mary within the string.
  
+//? Chris's revision for passing an argument
+/*
+function getQuoteFor(person) {
+  let quote = '';
+  if (person === 'mary') {
+    quote = 'supercali...';
+  } else {
+    quote = 'No quote found for that name';
+  }
+  return quote;
+}
+
+console.log(`I feel ${getQuoteFor('mary')}`);
+*/
+
 //? From my understanding, a function can run many/any lines
 //? of code, but the return is only displayed when the function is
 //? referred as a variable. It won't actually display or show the
 //? return when it is simply recalled.
-//!
+//! end of noteGlonel
 
 // 3. Function to add two numbers together & return the result
 
