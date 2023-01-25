@@ -15,6 +15,17 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return and personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
+let firstName = 'Glonel';
+let lastName = 'Dimapilis';
+let fullName = `${firstName} ${lastName}`;
+
+function helloName( name ) {
+  name = fullName;
+  return name;
+}
+// Remember to call the function to test
+console.log('Hello,', helloName());
+
 //! noteGlonel - testing my understanding of the code
 let poppins = 'supercalifrigilisticexpialidocious'
 function spoonfulOfSugar(mary) {
@@ -32,19 +43,8 @@ console.log(`I feel ${spoonfulOfSugar()}`);
 //? From my understanding, a function can run many/any lines
 //? of code, but the return is only displayed when the function is
 //? referred as a variable. It won't actually display or show the
-//? return when it is simply called.
+//? return when it is simply recalled.
 //!
-
-let firstName = 'Glonel';
-let lastName = 'Dimapilis';
-let fullName = `${firstName} ${lastName}`;
-
-function helloName( name ) {
-  name = fullName;
-  return name;
-}
-// Remember to call the function to test
-console.log('Hello,', helloName());
 
 // 3. Function to add two numbers together & return the result
 
