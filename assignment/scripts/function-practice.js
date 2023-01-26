@@ -62,38 +62,52 @@ console.log(`I feel ${getQuoteFor('mary')}`);
 //! end of noteGlonel
 
 // 3. Function to add two numbers together & return the result
-
+let thirdNumber = 2; // for question 4
+let secondNumber = 10;
+let result = 0;
 function addNumbers( firstNumber ) {
   // return firstNumber + secondNumber;
-
+  result = firstNumber + secondNumber;
+  return result;
 }
-
+console.log(`The result is:`, addNumbers(6));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNumber ) {
+  result = firstNumber * secondNumber * thirdNumber;
+  return result;
 }
-
+console.log(`The multiplied result is:`, multiplyThree(5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
+  } else {
+    return false;
   }
-    return;
 }
 // Call the function to test each outcome (true & false) 
+console.log(`Am I a positive number?`, isPositive(5));
+console.log(`Am I a positive number?`, isPositive(0));
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+
+// console.log( 'isPositive - should say true', isPositive(3) );
+// console.log( 'isPositive - should say false', isPositive(0) );
+// console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'I am most honored to be a positive number', isPositive(3) );
+console.log( `I'm not techinically negative...`, isPositive(0) );
+console.log( 'Hi. I am a -3.', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+//! need to review class video
+// Added below (104)
+let polyhedrals = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function getLast( array ) {
-
+  
 }
 
 // 7. Function to find a value in an array. Return true if the 
