@@ -116,7 +116,7 @@ function getLast( array ) {
 }
 console.log(`Here's the last item of the array:`, getLast(array)); // d20
 //? testing if it will show undefined below
-array = [];
+//array = [];
 console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 
 
@@ -124,8 +124,15 @@ console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (let i=0; i < array.length; i++) {
+    if (value === array[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
+console.log(find('d4', array))
 
 // ----------------------
 // Stretch Goals
