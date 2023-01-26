@@ -103,12 +103,22 @@ console.log( 'Hi. I am a -3.', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-//! need to review class video
-// Added below (104)
-let polyhedrals = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
+
+let array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function getLast( array ) {
-  
+  let lastItem;
+  if (array.length > 0) {
+    lastItem = array[array.length - 1];
+    return lastItem;
+  } else {
+    return lastItem;
+  }
 }
+console.log(`Here's the last item of the array:`, getLast(array)); // d20
+//? testing if it will show undefined below
+array = [];
+console.log(`Here's the last item of the array:`, getLast(array)); // undefined
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
