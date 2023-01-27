@@ -125,12 +125,17 @@ console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   for (let i=0; i < array.length; i++) {
+    let existValue;
     if (value === array[i]) {
-      return true;
+      existValue = true;
+      return existValue;
+    } else if (existValue = undefined){
+      existValue = false;
+      return existValue;
     }
   } 
 }
-console.log(find('d8', array))
+console.log(find('d7', array))
 
 // ----------------------
 // Stretch Goals
