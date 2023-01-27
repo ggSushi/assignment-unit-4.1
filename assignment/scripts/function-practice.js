@@ -115,27 +115,25 @@ function getLast( array ) {
   }
 }
 console.log(`Here's the last item of the array:`, getLast(array)); // d20
-//? testing if it will show undefined below
-//array = [];
+//* testing if it will show undefined below
+array = [];
 console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+//* re-adding values into array for this question.
+array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function find( value, array ){
   for (let i=0; i < array.length; i++) {
-    let existValue;
     if (value === array[i]) {
-      existValue = true;
-      return existValue;
-    } else if (existValue = undefined){
-      existValue = false;
-      return existValue;
+      return true;
     }
   } 
 }
-console.log(find('d7', array))
+console.log(find('d8', array))
 
 // ----------------------
 // Stretch Goals
