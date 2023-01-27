@@ -106,12 +106,12 @@ console.log( 'Hi. I am a -3.', isPositive(-3) );
 
 let array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function getLast( array ) {
-  let lastItem;
+  
   if (array.length > 0) {
-    lastItem = array[array.length - 1];
+    let lastItem = array[array.length - 1];
     return lastItem;
   } else {
-    return lastItem;
+    return;
   }
 }
 console.log(`Here's the last item of the array:`, getLast(array)); // d20
