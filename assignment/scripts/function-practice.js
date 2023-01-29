@@ -124,6 +124,8 @@ console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
+//! Issue: I'm having trouble figuring out this question. I can get it to return true, but for some reason, it has still been 
+//! spitting out 'undefined' instead of false. I'll try it again tomorrow, 1/30
 //* re-adding values into array for this question.
 array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function find( value, array ){
