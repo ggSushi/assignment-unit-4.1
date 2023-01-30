@@ -116,7 +116,7 @@ function getLast( array ) {
 console.log(`Here's the last item of the array:`, getLast(array)); // d20
 //* testing if it will show undefined below
 array = [];
-console.log(`Here's the last item of the array:`, getLast(array)); // undefined
+console.log(`Here's the last item of the emptied array:`, getLast(array)); // undefined
 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -185,13 +185,31 @@ function sumAll(array) {
 }
 console.log(`Here's the sum of a buncha numbers:`, sumAll(bunchaNumbers));
 // testing a new array
-let moreNumbers = [3, 3, 3, 3, 5, 5, 4, 4];
+let moreNumbers = [3, 3, -3, -3, 5, 5, -4, 4];
 console.log(`Here's the sum of more numbers:`, sumAll(moreNumbers));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+//* Using moreNumbers array for this question
 
+function sortPositive(array) {
+  let positiveNumbers = [];
+  let emptyArray = [];
+  // This loop should push positive values from array into positiveNumbers array.
+  for (i=0; i < array.length; i++) {
+    if (array[i] > 0) {
+      positiveNumbers.push(array[i]);
+    } 
+  }
+  // This if statement should help determine whether or not to display emptyArray or positiveNumbers.
+  if (positiveNumbers.length <= 0) {
+    return emptyArray;
+  } else {
+    return positiveNumbers;
+  }
+}
+console.log(`Here are positive numbers from array:`, sortPositive(moreNumbers));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
