@@ -157,11 +157,21 @@ console.log('This is the find', find('d30', array));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+let string = 'alphabet';
 function isFirstLetter(letter, string) {
-
+  let wordArray = string.split('');
+  for (let i of wordArray) {
+    if (letter === wordArray[0]) {
+      return true;
+    }
+  }
+  return false;
 }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+//Added line below for testing
+console.log( 'isFirstLetter - should say false', isFirstLetter('l', 'alphabet') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
