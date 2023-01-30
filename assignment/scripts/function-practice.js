@@ -34,10 +34,10 @@ function spoonfulOfSugar(mary) {
   return mary;
 }
 spoonfulOfSugar(); 
-//The above line (25) should just display the log, not the return
+//The above line (36) should just display the log, not the return
 
 console.log(`I feel ${spoonfulOfSugar()}`);
-// The above line (28) should display the log within the function 
+// The above line (39) should display the log within the function 
 // AND return the value of mary within the string.
  
 //? Chris's revision for passing an argument
@@ -51,7 +51,6 @@ function getQuoteFor(person) {
   }
   return quote;
 }
-
 console.log(`I feel ${getQuoteFor('mary')}`);
 */
 
