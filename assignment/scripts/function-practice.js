@@ -124,18 +124,34 @@ console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-//! Issue: I'm having trouble figuring out this question. I can get it to return true, but for some reason, it has still been 
-//! spitting out 'undefined' instead of false. I'll try it again tomorrow, 1/30
-//* re-adding values into array for this question.
-array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
-function find( value, array ){
-  for (let i=0; i < array.length; i++) {
-    if (value === array[i]) {
+//! NOTES: Thanks, Marc!
+//! in a function, the VERY FIRST RETURN IT FINDS will complete the function, ending it there. In this loop,
+//! it was ending early because I previously had it like this:
+/**
+ * function find( value, array ){
+  for (let item of array) {
+    if (value == item) {
       return true;
+    } else {
+      return false;
     }
   } 
 }
-console.log(find('d8', array))
+ */
+//! This wasn't letting it run the loop for anything further than the first value.
+//! Marc had me move the return false outside of the loop, which fixed the issue.
+
+//* re-adding values into array for this question.
+array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
+function find( value, array ){
+  for (let item of array) {
+    if (value == item) {
+      return true;
+    } 
+  } 
+  return false;
+}
+console.log('This is the find', find('d30', array));
 
 // ----------------------
 // Stretch Goals
