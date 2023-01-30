@@ -175,11 +175,18 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('l', 'alphabet') 
 
 // 9. Function to return the sum of all numbers in an array
 let bunchaNumbers = [1, 2, 3, 4, 8, 9, 0, 10];
-function sumAll( ) {
-  let sum = 0
+function sumAll(array) {
+  let sum = 0;
   // TODO: loop to add items
+  for (i=0; i < array.length; i++) {
+    sum = sum + array[i];
+  }
   return sum;
 }
+console.log(`Here's the sum of a buncha numbers:`, sumAll(bunchaNumbers));
+// testing a new array
+let moreNumbers = [3, 3, 3, 3, 5, 5, 4, 4];
+console.log(`Here's the sum of more numbers:`, sumAll(moreNumbers));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
