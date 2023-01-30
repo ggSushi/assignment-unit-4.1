@@ -229,7 +229,7 @@ points(1, 1) ➞ 5
 points(7, 5) ➞ 29
 points(38, 8) ➞ 100
  */
-
+//Added foul shots to the function. Should display foul shot values, 2-pointers, and 3-pointers
 function pointCalc(foul, insideArch, outsideArch) {
   let sumOutsideArch = outsideArch * 3;
   let sumInsideArch = insideArch * 2;
