@@ -210,6 +210,9 @@ function sortPositive(array) {
   }
 }
 console.log(`Here are positive numbers from array:`, sortPositive(moreNumbers));
+// testing to see if it works on negativeNumbers array
+let negativeNumbers = [-1, -2, -5, 0, -10];
+console.log(`There should be no numbers in this array.`, sortPositive(negativeNumbers));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
