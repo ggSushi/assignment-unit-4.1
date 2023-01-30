@@ -218,3 +218,25 @@ console.log(`There should be no numbers in this array.`, sortPositive(negativeNu
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// Edabit: Basketball Points
+// (https://edabit.com/challenge/Y46Xp2pcvTB77bmdD)
+/*
+You are counting points for a basketball game, given the amount of 2-pointers scored and 
+3-pointers scored, find the final points for the team and return that value.
+examples: 
+points(1, 1) ➞ 5
+points(7, 5) ➞ 29
+points(38, 8) ➞ 100
+ */
+
+function pointCalc(foul, insideArch, outsideArch) {
+  let sumOutsideArch = outsideArch * 3;
+  let sumInsideArch = insideArch * 2;
+  let sumFoul = foul;
+  let totalPoints = sumOutsideArch + sumInsideArch + sumFoul;
+  return totalPoints;
+}
+console.log(`Total Points:`, pointCalc(1, 1, 1));
+//testing for other values
+console.log(`Total Points:`, pointCalc(5, 12, 6));
