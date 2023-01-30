@@ -14,17 +14,16 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return and personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-
-let firstName = 'Glonel';
-let lastName = 'Dimapilis';
-let fullName = `${firstName} ${lastName}`;
+//? I realized I needed to use an argument to make this work, so I disabled these lines.
+// let firstName = 'Glonel';
+// let lastName = 'Dimapilis';
+// let fullName = `${firstName} ${lastName}`;
 
 function helloName( name ) {
-  name = fullName;
   return name;
 }
 // Remember to call the function to test
-console.log('Hello,', helloName());
+console.log('Hello,', helloName('Glonel Dimapilis'));
 
 //! noteGlonel - testing my understanding of the code
 let poppins = 'supercalifrigilisticexpialidocious'
@@ -52,6 +51,7 @@ function getQuoteFor(person) {
   return quote;
 }
 console.log(`I feel ${getQuoteFor('mary')}`);
+The argument within the function in the console.log is needed. I am learning this slowly.
 */
 
 //? From my understanding, a function can run many/any lines
@@ -144,7 +144,7 @@ console.log(`Here's the last item of the array:`, getLast(array)); // undefined
 array = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'];
 function find( value, array ){
   for (let item of array) {
-    if (value == item) {
+    if (value === item) {
       return true;
     } 
   } 
@@ -160,7 +160,7 @@ console.log('This is the find', find('d30', array));
 let string = 'alphabet';
 function isFirstLetter(letter, string) {
   let wordArray = string.split('');
-  for (let i of wordArray) {
+  for (let item of wordArray) {
     if (letter === wordArray[0]) {
       return true;
     }
@@ -174,6 +174,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('l', 'alphabet') );
 
 // 9. Function to return the sum of all numbers in an array
+let bunchaNumbers = [1, 2, 3, 4, 8, 9, 0, 10];
 function sumAll( ) {
   let sum = 0
   // TODO: loop to add items
